@@ -40,6 +40,7 @@ def find_minimum_latency_path(graph, compression_nodes, source, destination):
     return distances[destination]
 
 # Example usage 1
+print("Example usage 1:")
 graph = {
     'A': [('B', 10), ('C', 20)],
     'B': [('D', 15)],
@@ -53,6 +54,7 @@ min_latency = find_minimum_latency_path(graph, compression_nodes, source, destin
 print(f"Minimum total latency: {min_latency}")
 
 # Example usage 2 when destination is unreachable
+print("\nExample usage 2:")
 graph = {
     'A': [('B', 900), ('C', 50)],
     'B': [('C', 600)],
